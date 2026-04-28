@@ -42,7 +42,7 @@
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <h2>Login Form</h2>
+            <h2>Login</h2>
 
             <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
             <asp:TextBox ID="txtEmail" runat="server" CssClass="textbox"></asp:TextBox>
