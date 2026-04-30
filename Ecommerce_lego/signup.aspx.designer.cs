@@ -24,15 +24,6 @@ namespace Ecommerce_lego
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-
-        /// <summary>
         /// txtFullName control.
         /// </summary>
         /// <remarks>
@@ -42,13 +33,13 @@ namespace Ecommerce_lego
         protected global::System.Web.UI.WebControls.TextBox txtFullName;
 
         /// <summary>
-        /// Label2 control.
+        /// rfvName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvName;
 
         /// <summary>
         /// txtEmail control.
@@ -60,13 +51,22 @@ namespace Ecommerce_lego
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
-        /// Label3 control.
+        /// rfvEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvEmail;
+
+        /// <summary>
+        /// revEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revEmail;
 
         /// <summary>
         /// txtPassword control.
@@ -78,13 +78,13 @@ namespace Ecommerce_lego
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
 
         /// <summary>
-        /// Label4 control.
+        /// rfvPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPassword;
 
         /// <summary>
         /// txtConfirmPassword control.
@@ -94,6 +94,15 @@ namespace Ecommerce_lego
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtConfirmPassword;
+
+        /// <summary>
+        /// cvPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvPassword;
 
         /// <summary>
         /// btnSubmit control.
