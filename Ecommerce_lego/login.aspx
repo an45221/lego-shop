@@ -77,6 +77,14 @@
             <br /><br />
             <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn" OnClick="btnLogin_Click" />
             <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
+
+            <asp:Label ID="Label1" runat="server" CssClass="label1" ForeColor="Blue">
+             Not registered yet?
+            </asp:Label>
+
+            <asp:HyperLink ID="hlLogin" runat="server" NavigateUrl="signup.aspx" CssClass="link">
+                Create an account
+            </asp:HyperLink>
         </div>
     </form>
 </body>
