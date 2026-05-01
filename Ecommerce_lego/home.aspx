@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>LEGO Shop</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
     <style>
        body {
     font-family: 'Poppins', sans-serif;
@@ -140,6 +140,7 @@ h2 {
             <div class="search-box">
                 <asp:TextBox ID="txtSearch" runat="server" CssClass="search-input" placeholder="Search products..." />
                 <asp:Button ID="btnSearch" runat="server" Text="Search" />
+                <asp:
             </div>
         </div>
 
