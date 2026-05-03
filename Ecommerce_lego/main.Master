@@ -35,7 +35,6 @@
         <!-- Menu -->
         <div style="background: #005fa3; padding: 10px; text-align: center;">
             <a href="#" style="color: white; margin: 15px;">Toys</a>
-            <a href="#" style="color: white; margin: 15px;">Outdoor</a>
             <a href="#" style="color: white; margin: 15px;">Gaming</a>
             <a href="#" style="color: white; margin: 15px;">Offers</a>
         </div>
