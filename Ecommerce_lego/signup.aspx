@@ -68,7 +68,7 @@
             ErrorMessage="Full Name is required"
             ForeColor="Red" />
 
-            <br /><br />
+            <br />
 
             Email:
             <asp:TextBox ID="txtEmail" runat="server" CssClass="textbox"></asp:TextBox>
@@ -77,7 +77,7 @@
                 ErrorMessage="Email is required"
                 ForeColor="Red" />
 
-            <br /><br />
+            <br />
 
 
             <asp:RegularExpressionValidator ID="revEmail" runat="server"
@@ -86,7 +86,7 @@
                 ValidationExpression="\w+([-.+']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
                 ForeColor="Red" />
 
-            <br /><br />
+            <br />
 
             Password:
             <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="textbox"></asp:TextBox>
@@ -95,7 +95,7 @@
                 ErrorMessage="Password is required"
                 ForeColor="Red" />
 
-            <br /><br />
+            <br />
 
              Confirm Password:
             <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" CssClass="textbox"></asp:TextBox>
@@ -104,8 +104,9 @@
                 ControlToCompare="txtPassword"
                 ErrorMessage="Passwords do not match"
                 ForeColor="Red" />
-            <br /><br />
+            <br />
             <asp:Button ID="btnSubmit" runat="server" Text="SignUp" OnClick="btnSubmit_Click" CssClass="btn"/>
+            <br />
             <asp:Label ID="lblMessage" runat="server" CssClass="label1" ForeColor="Blue">
                 Already have an account?
             </asp:Label>

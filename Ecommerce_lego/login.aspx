@@ -67,7 +67,7 @@
                 ControlToValidate="txtEmail"
                 ErrorMessage="Email is required"
                 ForeColor="Red" />
-            <br /><br />
+            <br />
             Password:
             <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="textbox"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"

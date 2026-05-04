@@ -4,179 +4,182 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>LEGO Shop</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
-    <style>
-       body {
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+<style>
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: #f8f9fb;
-    }
+    background: #f4f6f9;
+}
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
-    background-color: #ffcc00;
-    padding: 15px 30px;
+    background: linear-gradient(135deg, #ffcc00, #ffdb4d);
+    padding: 18px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
-    letter-spacing: 1px;
+    color: #222;
 }
 
-/* Search box (modern) */
+/* SEARCH */
 .search-box {
     display: flex;
     align-items: center;
-    background: white;
+    background: #fff;
     padding: 5px;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.search-box input {
+.search-input {
     border: none;
     outline: none;
     padding: 10px 15px;
-    border-radius: 30px;
-    width: 220px;
+    border-radius: 50px;
+    width: 240px;
     font-size: 14px;
 }
 
-.search-box input::placeholder {
-    color: #999;
-}
-
-/* Button */
-.search-box button {
-    background-color: black;
-    color: white;
+.search-btn {
+    background: #222;
+    color: #fff;
     border: none;
     padding: 10px 18px;
-    border-radius: 30px;
+    border-radius: 50px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.search-box button:hover {
-    background-color: #333;
+.search-btn:hover {
+    background: #000;
 }
 
-/* Container */
+/* CONTAINER */
 .container {
-    padding: 30px;
+    padding: 40px;
 }
 
 h2 {
     font-weight: 600;
+    margin-bottom: 20px;
 }
 
-/* Product cards */
+/* PRODUCTS GRID */
 .products {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
-    flex-wrap: wrap;
 }
 
+/* CARD */
 .card {
-    background: white;
+    background: #fff;
     padding: 15px;
-    width: 220px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     text-align: center;
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 .card img {
     width: 100%;
-    height: 150px;
+    height: 160px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .card h4 {
-    margin: 10px 0 5px;
+    margin: 12px 0 6px;
     font-weight: 500;
 }
 
 .card p {
-    color: #555;
+    color: #777;
+    font-size: 14px;
 }
 
-/* Add to cart button */
+/* BUTTON */
 .card button {
-    background-color: #ffcc00;
+    background: linear-gradient(135deg, #ffcc00, #ffb700);
     border: none;
     padding: 10px;
     margin-top: 10px;
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
     font-weight: 500;
+    width: 100%;
     transition: 0.3s;
 }
 
 .card button:hover {
-    background-color: #e6b800;
+    background: #e6b800;
 }
 
-    </style>
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .search-input {
+        width: 150px;
+    }
+}
+</style>
 </head>
 
 <body>
-    <form id="form1" runat="server">
+<form id="form1" runat="server">
 
-        <!-- Navbar -->
-        <div class="navbar">
-            <div class="logo">LEGO Shop</div>
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">LEGO Shop</div>
 
-            <div class="search-box">
-                <asp:TextBox ID="txtSearch" runat="server" CssClass="search-input" placeholder="Search products..." />
-                <asp:Button ID="btnSearch" runat="server" Text="Search" />
-                <asp:
-            </div>
+        <div class="search-box">
+            <asp:TextBox ID="txtSearch" runat="server" CssClass="search-input" placeholder="Search products..." />
+            <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="search-btn" />
         </div>
+    </div>
 
-        <!-- Shop Section -->
-        <div class="container">
-            <h2>Shop</h2>
+    <!-- SHOP -->
+    <div class="container">
+        <h2>Shop</h2>
 
-            <div class="products">
+        <div class="products">
 
-                <!-- Product 1 -->
-                <div class="card">
-                    <img src="images/legocar.jpg" />
-                    <h4>LEGO Car</h4>
-                    <p>Rs. 1500</p>
-                    <button>Add to Cart</button>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="card">
-                    <img src="images/legohouse.jpg" />
-                    <h4>LEGO House</h4>
-                    <p>Rs. 3000</p>
-                    <button>Add to Cart</button>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="card">
-                    <img src="images/legorobot.jpg" />
-                    <h4>LEGO Robot</h4>
-                    <p>Rs. 2500</p>
-                    <button>Add to Cart</button>
-                </div>
-
+            <div class="card">
+                <img src="images/legocar.jpg" />
+                <h4>LEGO Car</h4>
+                <p>Rs. 1500</p>
+                <button>Add to Cart</button>
             </div>
-        </div>
 
-    </form>
+            <div class="card">
+                <img src="images/legohouse.jpg" />
+                <h4>LEGO House</h4>
+                <p>Rs. 3000</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="images/legorobot.jpg" />
+                <h4>LEGO Robot</h4>
+                <p>Rs. 2500</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+
+</form>
 </body>
 </html>
