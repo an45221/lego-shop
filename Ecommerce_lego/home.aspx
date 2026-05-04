@@ -160,22 +160,41 @@ h2 {
                 <img src="images/legocar.jpg" />
                 <h4>LEGO Car</h4>
                 <p>Rs. 1500</p>
-                <button>Add to Cart</button>
+               <asp:Button 
+                ID="btnCart1" 
+                runat="server" 
+                Text="Add to Cart" 
+                CssClass="cart-btn"
+                OnClick="AddToCart_Click"
+                CommandArgument="LEGO Car|1500" />
             </div>
 
             <div class="card">
                 <img src="images/legohouse.jpg" />
                 <h4>LEGO House</h4>
                 <p>Rs. 3000</p>
-                <button>Add to Cart</button>
+               <asp:Button 
+                 ID="btnCart2" 
+                 runat="server" 
+                 Text="Add to Cart" 
+                 CssClass="cart-btn"
+                 OnClick="AddToCart_Click"
+                 CommandArgument="LEGO House|1100" />
             </div>
 
             <div class="card">
                 <img src="images/legorobot.jpg" />
                 <h4>LEGO Robot</h4>
                 <p>Rs. 2500</p>
-                <button>Add to Cart</button>
+                <asp:Button 
+                 ID="btnCart3" 
+                 runat="server" 
+                 Text="Add to Cart" 
+                 CssClass="cart-btn"
+                 OnClick="AddToCart_Click"
+                 CommandArgument="LEGO Robot|2400" />
             </div>
+            <asp:BulletedList ID="CartList" runat="server" OnClick="CartList_Click"></asp:BulletedList>
 
         </div>
     </div>
