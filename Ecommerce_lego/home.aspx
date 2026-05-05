@@ -28,6 +28,23 @@ body {
     font-weight: 600;
     color: #222;
 }
+.logout-btn {
+    background: transparent;
+    border: 2px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.logout-btn:hover {
+    background: #ff4d4d;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 77, 77, 0.3);
+}
 
 /* SEARCH */
 .search-box {
@@ -134,6 +151,105 @@ h2 {
         width: 150px;
     }
 }
+/* HERO SECTION */
+.hero {
+    height: 80vh;
+    background: linear-gradient(135deg, #6fb1fc, #4364f7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* TEXT */
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.hero-text p {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background: white;
+    color: #4364f7;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* FLOATING ICONS */
+.hero-icons {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.icon-box {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    animation: float 4s infinite ease-in-out;
+}
+
+/* RANDOM POSITIONS */
+.icon-box:nth-child(1) { top: 20px; left: 50px; }
+.icon-box:nth-child(2) { top: 120px; left: 200px; }
+.icon-box:nth-child(3) { top: 250px; left: 80px; }
+.icon-box:nth-child(4) { top: 60px; left: 300px; }
+.icon-box:nth-child(5) { top: 200px; left: 260px; }
+
+/* FLOAT ANIMATION */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+.floating-img {
+    position: absolute;
+    width: 60px;   /* 👈 reduce size */
+    height: 60px;  /* keeps it uniform */
+    object-fit: cover;
+    border-radius: 10px;
+    animation: float 5s infinite ease-in-out;
+}
+.floating-img {
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
 </style>
 </head>
 
@@ -143,11 +259,35 @@ h2 {
     <!-- NAVBAR -->
     <div class="navbar">
         <div class="logo">LEGO Shop</div>
-
         <div class="search-box">
             <asp:TextBox ID="txtSearch" runat="server" CssClass="search-input" placeholder="Search products..." />
             <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="search-btn" />
         </div>
+        <asp:Button ID="btnLogOut" runat="server" Text="LogOut" CssClass="logout-btn" />
+    </div>
+    <!-- HERO SECTION -->
+    <div class="hero">
+
+        <!-- Left Content -->
+        <div class="hero-text">
+            <h1>Build, Play & Explore LEGO</h1>
+            <p>Discover amazing LEGO sets, track your builds, and enjoy creative shopping experience.</p>
+
+            <div class="hero-buttons">
+                <asp:Button ID="btnShopNow" runat="server" Text="Shop Now" CssClass="btn-primary" />
+                <asp:Button ID="btnExplore" runat="server" Text="Explore" CssClass="btn-outline" />
+            </div>
+        </div>
+
+        <!-- Floating Icons -->
+        <div class="hero-icons">
+            <img src="images/legocar.jpg" class="floating-img img" />
+            <img src="images/legohouse.jpg" class="floating-img img" />
+            <img src="images/legorobot.jpg" class="floating-img img" />
+            <img src="images/legorobot.jpg" class="floating-img img" />
+            <img src="images/legocar.jpg" class="floating-img img" />
+        </div>
+
     </div>
 
     <!-- SHOP -->
