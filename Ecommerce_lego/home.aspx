@@ -282,10 +282,7 @@ h2 {
         <!-- Floating Icons -->
         <div class="hero-icons">
             <img src="images/legocar.jpg" class="floating-img img" />
-            <img src="images/legohouse.jpg" class="floating-img img" />
-            <img src="images/legorobot.jpg" class="floating-img img" />
-            <img src="images/legorobot.jpg" class="floating-img img" />
-            <img src="images/legocar.jpg" class="floating-img img" />
+  
         </div>
 
     </div>
