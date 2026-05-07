@@ -48,5 +48,10 @@ namespace Ecommerce_lego
                 CartList.DataBind();
             }
         }
+
+        protected void btnLogOut_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

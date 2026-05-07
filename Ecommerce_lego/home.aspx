@@ -263,7 +263,7 @@ h2 {
             <asp:TextBox ID="txtSearch" runat="server" CssClass="search-input" placeholder="Search products..." />
             <asp:Button ID="btnSearch" runat="server" Text="Search" CssClass="search-btn" />
         </div>
-        <asp:Button ID="btnLogOut" runat="server" Text="LogOut" CssClass="logout-btn" />
+        <asp:Button ID="btnLogOut" runat="server" Text="LogOut" CssClass="logout-btn" OnClick="btnLogOut_Click" />
     </div>
     <!-- HERO SECTION -->
     <div class="hero">
