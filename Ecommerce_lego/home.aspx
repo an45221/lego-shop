@@ -8,7 +8,7 @@
 
 <style>
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
     margin: 0;
     background: #f4f6f9;
 }
