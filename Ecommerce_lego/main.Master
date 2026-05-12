@@ -75,6 +75,14 @@
         .cart-icon img:hover {
             transform: scale(1.1);
         }
+        .cart-icon1 img {
+            width: 24px;
+            transition: 0.3s;
+        }
+
+        .cart-icon1 img:hover {
+            transform: scale(1.1);
+        }
 
         /* LOGOUT BUTTON */
         .logout-btn {
@@ -127,8 +135,8 @@
 
             <div class="nav-right">
 
-                 <a href="#" class="cart-icon">
-                     <img src="images/bag.png" />
+                 <a href="#" class="cart-icon1">
+                     <img src="images/user.png" />
                  </a>
 
                 <a href="#" class="cart-icon">
@@ -137,7 +145,7 @@
 
                 <asp:Button ID="btnLogout" runat="server"
                     Text="Logout"
-                    CssClass="logout-btn" />
+                    CssClass="logout-btn" OnClick="btnLogout_Click" />
 
             </div>
         </div>

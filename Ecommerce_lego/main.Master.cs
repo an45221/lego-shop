@@ -13,5 +13,13 @@ namespace Ecommerce_lego
         {
 
         }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            // clear session and redirect to login page
+            Session.Clear();
+            Session.Abandon();
+            Response.Redirect("login.aspx");
+        }
     }
 }
