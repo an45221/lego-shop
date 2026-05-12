@@ -123,9 +123,12 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="home.aspx" />
+    <Content Include="images\bag.png" />
     <Content Include="images\legocar.jpg" />
     <Content Include="images\legohouse.jpg" />
     <Content Include="images\legorobot.jpg" />
+    <Content Include="images\search.png" />
+    <Content Include="images\user.png" />
     <Content Include="login.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -277,6 +280,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
