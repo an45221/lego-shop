@@ -34,7 +34,7 @@
             <div class="auth-card">
                 <div class="auth-visual">
                     <h3>Welcome to LEGO SHOP</h3>
-                    <p>Build. Play. Imagine. Sign in to manage your orders, saves and exclusive deals.</p>
+                    <p>Build. Play. Sign in to manage your orders, saves and exclusive deals.</p>
                     <div style="margin-top:20px; font-weight:600;">Play with the best building blocks.</div>
                 </div>
 
