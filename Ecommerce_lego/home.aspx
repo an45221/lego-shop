@@ -163,11 +163,9 @@
         font-size:40px;
     }
 }
-
 </style>
 
 </asp:Content>
-
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 <div class="hero">
@@ -176,6 +174,8 @@
     <div class="hero-left">
         <img src="images/jeep.png" alt="Lego Jeep" />
     </div>
+
+<!-- product showcase removed -->
 
     <!-- RIGHT CONTENT -->
     <div class="hero-right">

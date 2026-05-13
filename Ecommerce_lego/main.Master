@@ -75,14 +75,6 @@
         .cart-icon img:hover {
             transform: scale(1.1);
         }
-        .cart-icon1 img {
-            width: 24px;
-            transition: 0.3s;
-        }
-
-        .cart-icon1 img:hover {
-            transform: scale(1.1);
-        }
 
         /* LOGOUT BUTTON */
         .logout-btn {
@@ -100,7 +92,6 @@
             background: #d01012;
         }
 
-        /* MAIN CONTENT */
         
 
         /* FOOTER */
@@ -120,12 +111,15 @@
 <body>
     <form id="form1" runat="server">
 
+        <!-- NAVBAR -->
         <div class="navbar">
 
+            <!-- LOGO -->
             <div class="logo">
                 LEGO <span>SHOP</span>
             </div>
 
+            <!-- SEARCH -->
             <div class="search-box">
                 <asp:TextBox ID="txtSearch" runat="server"
                     placeholder="Search LEGO sets, toys, cars..."
@@ -133,16 +127,15 @@
                 </asp:TextBox>
             </div>
 
+            <!-- RIGHT SIDE -->
             <div class="nav-right">
 
-                 <a href="#" class="cart-icon1">
-                     <img src="images/user.png" />
-                 </a>
-
+                <!-- CART -->
                 <a href="#" class="cart-icon">
                     <img src="images/bag.png" />
                 </a>
 
+                <!-- LOGOUT -->
                 <asp:Button ID="btnLogout" runat="server"
                     Text="Logout"
                     CssClass="logout-btn" OnClick="btnLogout_Click" />
@@ -150,11 +143,13 @@
             </div>
         </div>
 
+        <!-- PAGE CONTENT -->
         <main>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
             </asp:ContentPlaceHolder>
         </main>
 
+        <!-- FOOTER -->
         <div class="footer">
             © 2026 LEGO SHOP | All Rights Reserved
         </div>
