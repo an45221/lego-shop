@@ -123,6 +123,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="home.aspx" />
+    <Content Include="images\77243_Prod_en-gb.png" />
     <Content Include="images\bag.png" />
     <Content Include="images\legocar.jpg" />
     <Content Include="images\legohouse.jpg" />

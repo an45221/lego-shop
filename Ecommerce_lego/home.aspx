@@ -3,7 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
 <style>
-    *{
+
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -110,18 +111,6 @@
     font-weight:600;
 }
 
-/* SMALL SHADOW */
-.hero::after{
-    content:'';
-    position:absolute;
-    bottom:-100px;
-    left:0;
-    width:100%;
-    height:200px;
-    background:black;
-    transform:skewY(-4deg);
-}
-
 /* FLOAT ANIMATION */
 @keyframes float{
     0%{
@@ -133,6 +122,148 @@
     100%{
         transform:translateY(0px);
     }
+}
+
+/* ========================= */
+/* FEATURED PRODUCTS SECTION */
+/* ========================= */
+
+.featured-section{
+    width:100%;
+    padding:70px 50px;
+    background:#f8f8f8;
+}
+
+.featured-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.featured-header h2{
+    font-size:40px;
+    font-weight:700;
+    color:#111;
+}
+
+.arrow-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.arrow{
+    width:45px;
+    height:45px;
+    border:2px solid #ddd;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    background:white;
+    transition:0.3s;
+    font-size:20px;
+}
+
+.arrow:hover{
+    background:#ffd400;
+}
+
+/* PRODUCT GRID */
+.product-container{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    padding-bottom:10px;
+}
+
+.product-card{
+    min-width:260px;
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    transition:0.3s;
+    position:relative;
+    border:1px solid #eee;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.new-badge{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#ffd400;
+    padding:6px 14px;
+    font-size:13px;
+    font-weight:600;
+    border-radius:5px;
+}
+
+.product-image{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.product-title{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#111;
+}
+
+.product-info{
+    display:flex;
+    gap:15px;
+    color:#777;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+.product-price{
+    font-size:24px;
+    font-weight:700;
+    color:#111;
+    margin-bottom:20px;
+}
+
+.card-buttons{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.add-btn{
+    background:#ff8c00;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.add-btn:hover{
+    background:#e67600;
+}
+
+.wishlist{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#f2f2f2;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    font-size:20px;
 }
 
 /* RESPONSIVE */
@@ -162,22 +293,26 @@
     .hero-right h1{
         font-size:40px;
     }
+
+    .featured-header{
+        flex-direction:column;
+        gap:20px;
+    }
 }
+
 </style>
 
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+
+<!-- HERO SECTION -->
 <div class="hero">
 
-    <!-- LEFT IMAGE -->
     <div class="hero-left">
         <img src="images/jeep.png" alt="Lego Jeep" />
     </div>
 
-<!-- product showcase removed -->
-
-    <!-- RIGHT CONTENT -->
     <div class="hero-right">
 
         <div class="tags">
@@ -209,5 +344,106 @@
     </div>
 
 </div>
+
+<!-- FEATURED PRODUCTS -->
+<section class="featured-section">
+
+    <div class="featured-header">
+
+        <h2>Find the perfect formula 1 edition</h2>
+
+        <div class="arrow-buttons">
+            <div class="arrow">&#10094;</div>
+            <div class="arrow">&#10095;</div>
+        </div>
+
+    </div>
+
+    <div class="product-container">
+
+        <!-- PRODUCT 1 -->
+        <div class="product-card">
+
+            <span class="new-badge">New</span>
+
+            <img src="images/77243_Prod_en-gb.png" class="product-image" />
+
+            <h3 class="product-title">Formula 1 lego </h3>
+
+            <div class="product-info">
+                <span>18+</span>
+                <span>2234 pcs</span>
+                <span>⭐ 4.8</span>
+            </div>
+
+            <div class="product-price">$179.99</div>
+
+            <div class="card-buttons">
+
+                <button class="add-btn">Add to Bag</button>
+
+                <div class="wishlist">♡</div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 2 -->
+        <div class="product-card">
+
+            <span class="new-badge">New</span>
+
+            <img src="images/77243_Prod_en-gb.png" class="product-image" />
+
+            <h3 class="product-title">Starfighter™</h3>
+
+            <div class="product-info">
+                <span>18+</span>
+                <span>1809 pcs</span>
+                <span>⭐ 4.5</span>
+            </div>
+
+            <div class="product-price">$249.99</div>
+
+            <div class="card-buttons">
+
+                <button class="add-btn">Add to Bag</button>
+
+                <div class="wishlist">♡</div>
+
+            </div>
+
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card">
+
+            <span class="new-badge">New</span>
+
+            <img src="images/77243_Prod_en-gb.png" class="product-image" />
+
+            <h3 class="product-title">Eevee</h3>
+
+            <div class="product-info">
+                <span>18+</span>
+                <span>587 pcs</span>
+                <span>⭐ 4.7</span>
+            </div>
+
+            <div class="product-price">$59.99</div>
+
+            <div class="card-buttons">
+
+                <button class="add-btn">Add to Bag</button>
+
+                <div class="wishlist">♡</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 </asp:Content>
