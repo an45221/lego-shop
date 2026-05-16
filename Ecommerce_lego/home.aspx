@@ -11,7 +11,7 @@
     font-family:'Poppins',sans-serif;
 }
 
-/* HERO SECTION */
+
 .hero{
     width:100%;
     height:85vh;
