@@ -363,7 +363,10 @@
 
             <span class="new-badge">New</span>
 
-            <img src="images/77243_Prod_en-gb.png" class="product-image" />
+                        <a href="product.aspx">
+                <img src="images/77243_Prod_en-gb.png"
+                     class="product-image" />
+            </a>
 
             <h3 class="product-title">Formula 1 lego </h3>
 
@@ -390,7 +393,10 @@
 
             <span class="new-badge">New</span>
 
-            <img src="images/77243_Prod_en-gb.png" class="product-image" />
+             <a href="product.aspx">
+                <img src="images/77243_Prod_en-gb.png"
+                     class="product-image" />
+             </a>
 
             <h3 class="product-title">Starfighter™</h3>
 
@@ -417,7 +423,10 @@
 
             <span class="new-badge">New</span>
 
-            <img src="images/77243_Prod_en-gb.png" class="product-image" />
+             <a href="product.aspx">
+                <img src="images/77243_Prod_en-gb.png"
+                     class="product-image" />
+            </a>
 
             <h3 class="product-title">Eevee</h3>
 
