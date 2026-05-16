@@ -199,7 +199,19 @@ runat="server">
 
             </div>
 
-            
+            <div class="action-buttons">
+
+                <asp:Button ID="btnAddBag"
+                    runat="server"
+                    Text="Add to Bag"
+                    CssClass="add-cart-btn" />
+
+                <asp:Button ID="btnBuyNow"
+                    runat="server"
+                    Text="Buy Now"
+                    CssClass="buy-btn" />
+
+            </div>
             
 
         </div>
