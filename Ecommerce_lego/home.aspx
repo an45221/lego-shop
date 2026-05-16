@@ -124,9 +124,7 @@
     }
 }
 
-/* ========================= */
-/* FEATURED PRODUCTS SECTION */
-/* ========================= */
+
 
 .featured-section{
     width:100%;
@@ -170,7 +168,7 @@
     background:#ffd400;
 }
 
-/* PRODUCT GRID */
+
 .product-container{
     display:flex;
     gap:25px;
@@ -266,7 +264,7 @@
     font-size:20px;
 }
 
-/* RESPONSIVE */
+
 @media(max-width:900px){
 
     .hero{
@@ -306,7 +304,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 
-<!-- HERO SECTION -->
 <div class="hero">
 
     <div class="hero-left">
@@ -345,7 +342,7 @@
 
 </div>
 
-<!-- FEATURED PRODUCTS -->
+
 <section class="featured-section">
 
     <div class="featured-header">
@@ -361,7 +358,7 @@
 
     <div class="product-container">
 
-        <!-- PRODUCT 1 -->
+        
         <div class="product-card">
 
             <span class="new-badge">New</span>
@@ -388,7 +385,7 @@
 
         </div>
 
-        <!-- PRODUCT 2 -->
+        
         <div class="product-card">
 
             <span class="new-badge">New</span>
@@ -415,7 +412,7 @@
 
         </div>
 
-        <!-- PRODUCT 3 -->
+        
         <div class="product-card">
 
             <span class="new-badge">New</span>
