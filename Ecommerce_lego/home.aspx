@@ -368,7 +368,12 @@
                      class="product-image" />
             </a>
 
-            <h3 class="product-title">Formula 1 lego </h3>
+             <h3 class="product-title">
+                <a href="product.aspx"
+                   style="text-decoration:none;color:#111;">
+                   Formula 1 lego
+                </a>
+            </h3>
 
             <div class="product-info">
                 <span>18+</span>
