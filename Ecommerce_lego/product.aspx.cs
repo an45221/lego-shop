@@ -13,5 +13,15 @@ namespace Ecommerce_lego
         {
 
         }
+
+        protected void btnAddBag_Click(object sender, EventArgs e)
+        {
+            Response.Write("<script>alert('Product Added to Bag!')</script>");
+        }
+
+        protected void btnBuyNow_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("checkout.aspx");
+        }
     }
 }
