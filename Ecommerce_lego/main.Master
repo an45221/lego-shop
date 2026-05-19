@@ -75,6 +75,22 @@
         .cart-icon img:hover {
             transform: scale(1.1);
         }
+        .cart-link{
+        text-decoration:none;
+        color:white;
+        font-size:18px;
+        position:relative;
+        font-weight:600;
+        }
+
+       .cart-count{
+        background:#ffd400;
+        color:black;
+        border-radius:50%;
+        padding:4px 8px;
+        font-size:13px;
+        margin-left:5px;
+         }
 
         /* LOGOUT BUTTON */
         .logout-btn {
@@ -131,9 +147,20 @@
             <div class="nav-right">
 
                 <!-- CART -->
-                <a href="#" class="cart-icon">
-                    <img src="images/bag.png" />
-                </a>
+                <div class="cart-area">
+
+                    <a href="cart.aspx" class="cart-link">
+
+                        Cart
+
+                        <span class="cart-count">
+                            <%= Session["cartCount"] != null ?
+                            Session["cartCount"].ToString() : "0" %>
+                        </span>
+
+                    </a>
+
+                </div>
 
                 <!-- LOGOUT -->
                 <asp:Button ID="btnLogout" runat="server"
@@ -151,7 +178,7 @@
 
         <!-- FOOTER -->
         <div class="footer">
-            © 2026 LEGO SHOP | All Rights Reserved
+             2026 LEGO SHOP | All Rights Reserved
         </div>
 
     </form>

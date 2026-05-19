@@ -204,7 +204,8 @@ runat="server">
                 <asp:Button ID="btnAddBag"
                     runat="server"
                     Text="Add to Bag"
-                    CssClass="add-cart-btn" OnClick="btnAddBag_Click" />
+                    CssClass="add-cart-btn"
+                    OnClick="btnAddBag_Click" />
 
                 <asp:Button ID="btnBuyNow"
                     runat="server"
