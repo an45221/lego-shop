@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Data;
 
 namespace Ecommerce_lego
 {
@@ -11,7 +7,23 @@ namespace Ecommerce_lego
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["cart"] != null)
+            {
+                DataTable dt = (DataTable)Session["cart"];
 
+                rptCart.DataSource = dt;
+                rptCart.DataBind();
+
+                double total = 0;
+
+                foreach (DataRow row in dt.Rows)
+                {
+                    total += Convert.ToDouble(row["Price"])
+                    * Convert.ToInt32(row["Quantity"]);
+                }
+
+                lblTotal.Text = total.ToString();
+            }
         }
     }
 }

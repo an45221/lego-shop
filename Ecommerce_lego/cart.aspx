@@ -45,7 +45,7 @@
     <h1 class="cart-title">My Cart</h1>
 
     <asp:Repeater ID="rptCart"
-        runat="server">
+        runat="server" OnItemCommand="rptCart_ItemCommand">
 
         <ItemTemplate>
 
