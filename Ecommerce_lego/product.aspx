@@ -191,13 +191,25 @@ runat="server">
             
             <div class="quantity-box">
 
-                <button class="qty-btn">-</button>
+                <asp:Button ID="btnMinus"
+                    runat="server"
+                    Text="-"
+                    CssClass="qty-btn"
+                    OnClick="btnMinus_Click" />
 
-                <span class="qty-number">1</span>
+                <asp:Label ID="lblQuantity"
+                    runat="server"
+                    Text="1"
+                    CssClass="qty-number">
+                </asp:Label>
 
-                <button class="qty-btn">+</button>
+                <asp:Button ID="btnPlus"
+                    runat="server"
+                    Text="+"
+                    CssClass="qty-btn"
+                    OnClick="btnPlus_Click" />
 
-            </div>
+          </div>
 
             <div class="action-buttons">
 
