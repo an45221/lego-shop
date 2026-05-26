@@ -307,7 +307,7 @@
 <div class="hero">
 
     <div class="hero-left">
-        <img src="images/jeep.png" alt="Lego Jeep" />
+        <img src="images/jeep3.png" alt="Lego Jeep" />
     </div>
 
     <div class="hero-right">
@@ -329,7 +329,7 @@
             <asp:Button ID="btnBuyNow"
                 runat="server"
                 Text="Buy Now"
-                CssClass="buy-btn" />
+                CssClass="buy-btn" OnClick="btnBuyNow_Click" />
 
             <asp:Button ID="btnShop"
                 runat="server"

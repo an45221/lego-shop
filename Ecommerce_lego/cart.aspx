@@ -24,7 +24,8 @@
     box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
-.cart-image{
+.cart-image
+{
     width:120px;
 }
 
@@ -45,7 +46,7 @@
     <h1 class="cart-title">My Cart</h1>
 
     <asp:Repeater ID="rptCart"
-        runat="server" OnItemCommand="rptCart_ItemCommand">
+        runat="server">
 
         <ItemTemplate>
 

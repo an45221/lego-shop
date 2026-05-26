@@ -63,23 +63,12 @@ namespace Ecommerce_lego
 
         protected void btnPlus_Click(object sender, EventArgs e)
         {
-            quantity = Convert.ToInt32(lblQuantity.Text);
-
-            quantity++;
-
-            lblQuantity.Text = quantity.ToString();
+           
         }
 
         protected void btnMinus_Click(object sender, EventArgs e)
         {
-            quantity = Convert.ToInt32(lblQuantity.Text);
-
-            if (quantity > 1)
-            {
-                quantity--;
-            }
-
-            lblQuantity.Text = quantity.ToString();
+            
         }
     }
 }

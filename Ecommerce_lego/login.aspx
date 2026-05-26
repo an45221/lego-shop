@@ -8,24 +8,124 @@
     <title>Login - LEGO Shop</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
     <style>
-        body{ font-family:'Poppins', Arial, sans-serif; margin:0; background: linear-gradient(180deg,#f7f9fb,#e9f1ff); }
-        .auth-wrap{ min-height:100vh; display:flex; align-items:center; justify-content:center; padding:40px; }
-        .auth-card{ width:920px; display:flex; border-radius:12px; overflow:hidden; box-shadow:0 12px 30px rgba(20,20,60,0.12); background:white; }
-        .auth-visual{ flex:1.1; background: linear-gradient(135deg,#ffcf00,#ff7a00); color:white; padding:40px; display:flex; flex-direction:column; justify-content:center; gap:18px; }
-        .auth-visual h3{ margin:0; font-size:26px; }
-        .auth-visual p{ margin:0; opacity:0.95; }
-        .auth-form{ flex:1; padding:34px 40px; }
-        .brand{ font-weight:700; font-size:22px; color:#111; margin-bottom:14px }
-        .form-group{ margin-bottom:14px; }
-        .form-input{ width:100%; padding:12px 14px; border-radius:8px; border:1px solid #e3e7ee; font-size:14px; }
-        .form-input:focus{ outline:none; border-color:#7aa7ff; box-shadow:0 6px 20px rgba(122,167,255,0.12); }
-        .btn-primary{ width:100%; padding:12px; border-radius:8px; border:none; background:#ff7a00; color:white; font-weight:600; cursor:pointer; }
-        .muted{ color:#6b7280; font-size:13px }
-        .row{ display:flex; gap:10px }
-        .link{ color:#ff7a00; font-weight:600; text-decoration:none }
-        .small-note{ margin-top:12px; font-size:13px }
-        .error{ color:#c53030; font-size:13px }
-        @media(max-width:880px){ .auth-card{ flex-direction:column; width:100%; } .auth-visual{ display:none } }
+        body{ 
+            font-family:'Poppins', Arial, sans-serif; 
+            margin:0; 
+            background: linear-gradient(180deg,#f7f9fb,#e9f1ff); }
+        .auth-wrap{ 
+            min-height:100vh; 
+            display:flex; 
+            align-items:center; 
+            justify-content:center; 
+            padding:40px; 
+
+        }
+        .auth-card{ 
+            width:920px; 
+            display:flex; 
+            border-radius:12px; 
+            overflow:hidden; 
+            box-shadow:0 12px 30px rgba(20,20,60,0.12); 
+            background:white; 
+
+        }
+        .auth-visual{ 
+            flex:1.1; 
+            background: linear-gradient(135deg,#ffcf00,#ff7a00); 
+            color:white; 
+            padding:40px; 
+            display:flex; 
+            flex-direction:column; 
+            justify-content:center; 
+            gap:18px; 
+
+        }
+        .auth-visual h3{ 
+            margin:0; 
+            font-size:26px; }
+        .auth-visual p{ 
+            margin:0; 
+            opacity:0.95; 
+
+        }
+        .auth-form{ 
+            flex:1; 
+            padding:34px 40px; 
+
+        }
+        .brand{ 
+            font-weight:700; 
+            font-size:22px; 
+            color:#111; 
+            margin-bottom:14px 
+
+        }
+        .form-group{ 
+            margin-bottom:14px; 
+
+        }
+        .form-input{ 
+            width:100%; 
+            padding:12px 14px; 
+            border-radius:8px; 
+            border:1px solid #e3e7ee; 
+            font-size:14px; 
+
+        }
+        .form-input:focus{ 
+            outline:none; 
+            border-color:#7aa7ff; 
+            box-shadow:0 6px 20px rgba(122,167,255,0.12); 
+
+        }
+        .btn-primary{ 
+            width:100%; 
+            padding:12px; 
+            border-radius:8px; 
+            border:none; 
+            background:#ff7a00; 
+            color:white; 
+            font-weight:600; 
+            cursor:pointer; 
+
+        }
+        .muted{ 
+            color:#6b7280; 
+            font-size:13px 
+
+        }
+        .row{ 
+            display:flex; 
+            gap:10px 
+
+        }
+        .link{ 
+            color:#ff7a00; 
+            font-weight:600; 
+            text-decoration:none 
+
+        }
+        .small-note{ 
+            margin-top:12px; 
+            font-size:13px 
+
+        }
+        .error{ 
+            color:#c53030; 
+            font-size:13px 
+
+        }
+        @media(max-width:880px){ 
+            .auth-card{ 
+                flex-direction:column; 
+                width:100%; 
+            } 
+            .auth-visual{ 
+                display:none 
+
+            }
+
+        }
     </style>
 </head>
 <body>

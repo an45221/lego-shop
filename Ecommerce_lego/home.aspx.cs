@@ -9,5 +9,10 @@ namespace Ecommerce_lego
         {
 
         }
+
+        protected void btnBuyNow_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("product.aspx");
+        }
     }
 }

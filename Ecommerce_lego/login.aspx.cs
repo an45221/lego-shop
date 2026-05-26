@@ -21,7 +21,7 @@ namespace Ecommerce_lego
 
             if (dr.Read())
             {
-                // Store user info (optional but important)
+                
                 Session["user"] = txtEmail.Text;
 
                 
